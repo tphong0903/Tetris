@@ -41,7 +41,6 @@ class Game:
         self.currentBlock.move(0,1)
         if(self.blockInside() == False or self.blockFits() == False):
             self.currentBlock.move(0,-1)
-            
     def moveDown(self,gameUpdate):
         self.currentBlock.move(1,0)
         if(self.blockInside() == False or self.blockFits() == False):
